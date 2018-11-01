@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oTK-6h-vfr">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Flight-->
+        <scene sceneID="J9K-rM-XaV">
+            <objects>
+                <controller identifier="Flight" id="oTK-6h-vfr" customClass="FlightInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="lW5-Bx-25u">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="Logo" id="3rq-FX-HrN">
+                                    <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="fDH-bU-c6m">
+                                    <items>
+                                        <label alignment="left" text="Flight 123" id="zDI-Oj-lT6">
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </label>
+                                        <label alignment="left" text="MEL TO SFO" id="uaJ-Uf-2jV"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="JPJ-Aq-qsy">
+                            <items>
+                                <label alignment="left" text="AA123" id="7hn-Ys-1xe"/>
+                                <label height="44" alignment="left" text="15:06" id="jEA-iE-Tvk">
+                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="54"/>
+                                </label>
+                                <label alignment="left" text="On Time" id="h5z-T2-TiN">
+                                    <color key="textColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                                <group width="1" alignment="left" id="RXh-vS-Sfw">
+                                    <items>
+                                        <label alignment="left" text="Gate 1A" id="TWf-6S-QK7"/>
+                                        <label alignment="right" text="Seat 64A" id="iXV-yE-vmr"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="boardTimeLabel" destination="jEA-iE-Tvk" id="77j-GK-1xb"/>
+                        <outlet property="boardingLabel" destination="7hn-Ys-1xe" id="YA3-hi-MKo"/>
+                        <outlet property="flightLabel" destination="zDI-Oj-lT6" id="ev2-6h-hoJ"/>
+                        <outlet property="gateLabel" destination="TWf-6S-QK7" id="Ord-i0-B35"/>
+                        <outlet property="routeLabel" destination="uaJ-Uf-2jV" id="eIL-Nx-ojj"/>
+                        <outlet property="seatLabel" destination="iXV-yE-vmr" id="ilZ-ZR-kdW"/>
+                        <outlet property="statusLabel" destination="h5z-T2-TiN" id="lQJ-7X-Sbk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="55" y="337"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Watch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="Watch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>
