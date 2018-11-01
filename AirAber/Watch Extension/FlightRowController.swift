@@ -17,17 +17,16 @@ class FlightRowController: NSObject {
   @IBOutlet var planeImage: WKInterfaceImage!
 
   
-  // 1
+
   var flight: Flight? {
-    // 2
+
     didSet {
-      // 3
+
       guard let flight = flight else { return }
-      // 4
+
       originLabel.setText(flight.origin)
       destinationLabel.setText(flight.destination)
       flightNumberLabel.setText(flight.number)
-      // 5
       if flight.onSchedule {
         statusLabel.setText("On Time")
       } else {
@@ -36,6 +35,16 @@ class FlightRowController: NSObject {
       }
     }
   }
-
-
+  
+  func updateForCheckIn() {
+    let color = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+    planeImage.setTintColor(color)
+    separator.setColor(color)
+  }
+  
+  func cancelForCheckIn() {
+    let color = UIColor(red: 250/255, green: 79/255, blue: 17/255, alpha: 1)
+    planeImage.setTintColor(color)
+    separator.setColor(color)
+  }
 }
