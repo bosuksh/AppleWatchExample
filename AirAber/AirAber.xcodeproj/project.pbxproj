@@ -16,6 +16,8 @@
 		7B8FA2801B724A9900B1E765 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA27F1B724A9900B1E765 /* Flight.swift */; };
 		7B8FA28C1B72893300B1E765 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA2891B72893300B1E765 /* QRCode.swift */; };
 		7B8FA28D1B72893300B1E765 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8FA28A1B72893300B1E765 /* UIImageViewExtension.swift */; };
+		97054051218AAA310016363A /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97054050218AAA310016363A /* ScheduleInterfaceController.swift */; };
+		97054053218AABCE0016363A /* FlightRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97054052218AABCE0016363A /* FlightRowController.swift */; };
 		97C88EFC218A98CC00D406ED /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C88EFA218A98CC00D406ED /* Interface.storyboard */; };
 		97C88EFE218A98CE00D406ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C88EFD218A98CE00D406ED /* Assets.xcassets */; };
 		97C88F05218A98CE00D406ED /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 97C88F04218A98CE00D406ED /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -83,6 +85,8 @@
 		7B8FA27F1B724A9900B1E765 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		7B8FA2891B72893300B1E765 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		7B8FA28A1B72893300B1E765 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		97054050218AAA310016363A /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
+		97054052218AABCE0016363A /* FlightRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowController.swift; sourceTree = "<group>"; };
 		97C88EF8218A98CC00D406ED /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C88EFB218A98CC00D406ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		97C88EFD218A98CE00D406ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 				97C88F11218A98CF00D406ED /* Info.plist */,
 				97C88F12218A98CF00D406ED /* PushNotificationPayload.apns */,
 				97C88F21218AA0B000D406ED /* FlightInterfaceController.swift */,
+				97054050218AAA310016363A /* ScheduleInterfaceController.swift */,
+				97054052218AABCE0016363A /* FlightRowController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -356,6 +362,8 @@
 			files = (
 				97C88F1E218A99A100D406ED /* Flight.swift in Sources */,
 				97C88F22218AA0B000D406ED /* FlightInterfaceController.swift in Sources */,
+				97054053218AABCE0016363A /* FlightRowController.swift in Sources */,
+				97054051218AAA310016363A /* ScheduleInterfaceController.swift in Sources */,
 				97C88F0E218A98CE00D406ED /* NotificationController.swift in Sources */,
 				97C88F0C218A98CE00D406ED /* ExtensionDelegate.swift in Sources */,
 			);
